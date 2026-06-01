@@ -1,6 +1,6 @@
 # Introduction to MongoDB
 
-Welcome to this guide on MongoDB! Whether you have never heard of it before or just want a solid refresher, this document will walk you through everything you need to know — from what MongoDB actually is, to creating databases, adding documents, and keeping your data clean with validation.
+Welcome to this guide on MongoDB! Whether you have never heard of it before or just want a solid refresher, this document will walk you through everything you need to know - from what MongoDB actually is, to creating databases, adding documents, and keeping your data clean with validation.
 
 ---
 
@@ -24,16 +24,16 @@ Each document can have its own structure, meaning you are not locked into a fixe
 
 ### ✅ Advantages
 
-- **Flexible schema** — documents do not all need to have the same fields
-- **Scales easily** — built to handle large amounts of data across multiple servers
-- **Fast development** — data is stored as JSON, which most web apps already use
-- **Great for unstructured data** — perfect when your data does not fit neatly into tables
+- **Flexible schema** - documents do not all need to have the same fields
+- **Scales easily** - built to handle large amounts of data across multiple servers
+- **Fast development** - data is stored as JSON, which most web apps already use
+- **Great for unstructured data** - perfect when your data does not fit neatly into tables
 
 ### ❌ Disadvantages
 
-- **No joins** — unlike SQL, MongoDB does not support traditional table joins
-- **Higher memory usage** — storing data as documents can use more storage than SQL
-- **Not ideal for complex transactions** — SQL databases are still better for things like banking systems that need strict data integrity
+- **No joins** - unlike SQL, MongoDB does not support traditional table joins
+- **Higher memory usage** - storing data as documents can use more storage than SQL
+- **Not ideal for complex transactions** - SQL databases are still better for things like banking systems that need strict data integrity
 
 ---
 
@@ -41,17 +41,17 @@ Each document can have its own structure, meaning you are not locked into a fixe
 
 MongoDB is used across a huge range of industries. Here are some of the most common:
 
-- 🛒 **E-commerce** — storing product catalogues where each product has different attributes
-- 💬 **Social media** — user profiles, posts, comments, and likes
-- 📰 **Content management** — blogs, news platforms, and media sites
-- 📡 **IoT (Internet of Things)** — storing real-time data from sensors and devices
-- 🎮 **Gaming** — player profiles, scores, and game state
+- 🛒 **E-commerce** - storing product catalogues where each product has different attributes
+- 💬 **Social media** - user profiles, posts, comments, and likes
+- 📰 **Content management** - blogs, news platforms, and media sites
+- 📡 **IoT (Internet of Things)** - storing real-time data from sensors and devices
+- 🎮 **Gaming** - player profiles, scores, and game state
 
 ---
 
 ## 4. Connecting to MongoDB Locally Using Compass
 
-MongoDB Compass is the official GUI for MongoDB — it lets you visually browse and manage your databases without writing any code.
+MongoDB Compass is the official GUI for MongoDB - it lets you visually browse and manage your databases without writing any code.
 
 **Steps to connect:**
 
@@ -60,7 +60,7 @@ MongoDB Compass is the official GUI for MongoDB — it lets you visually browse 
 mongodb://localhost:27017
 3. Click **Save & Connect**
 
-Once connected, you will see your local databases listed in the left sidebar — `admin`, `config`, and `local` are the defaults that come with every MongoDB installation.
+Once connected, you will see your local databases listed in the left sidebar - `admin`, `config`, and `local` are the defaults that come with every MongoDB installation.
 
 ---
 
@@ -78,7 +78,7 @@ This switches to a database called `sparta`. If it does not exist yet, MongoDB w
 
 ## 6. Creating a New Collection
 
-A **collection** is like a table in SQL — it groups related documents together.
+A **collection** is like a table in SQL - it groups related documents together.
 
 ```js
 db.createCollection("institute")
@@ -117,7 +117,7 @@ db.institute.insertMany([
 
 ## 8. Validation
 
-Validation allows you to enforce rules on the documents being inserted into a collection — so bad data gets rejected before it ever enters your database.
+Validation allows you to enforce rules on the documents being inserted into a collection - so bad data gets rejected before it ever enters your database.
 
 ### Creating a Collection with Validation
 
@@ -184,7 +184,7 @@ db.students.find({ age: { $gte: 20 } })
 
 ---
 
-## 10. Films Collection — Practice
+## 10. Films Collection - Practice
 
 ```js
 db.createCollection("films", {
