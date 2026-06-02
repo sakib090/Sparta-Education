@@ -11,8 +11,6 @@ def get_db():
     return client["starwars"]
 
 
-# --- Fetch data from SWAPI ---
-
 def fetch_all_pages(url):
     """
     SWAPI paginates its results. This keeps fetching until there are no more pages,
@@ -90,7 +88,6 @@ def insert_starships(db, starships, url_to_id_map):
     """
     collection = db["starships"]
 
-    # Clear out any existing documents so re-runs don't create duplicates
     collection.drop()
     print("  Cleared existing starships collection.")
 
@@ -123,9 +120,7 @@ if __name__ == "__main__":
     main()
 
 
-# =============================================================================
 # BONUS: Basic tests
-# =============================================================================
 
 def test_starships_inserted():
     """Check that the starships collection isn't empty after running main."""
