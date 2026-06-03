@@ -83,8 +83,6 @@ Fetching starships from SWAPI...
 Inserting starships into MongoDB...
   Cleared existing starships collection.
   Inserted 36 starships into MongoDB.
-
-All done! Characters and starships are in MongoDB with proper references.
 ```
 
 ---
